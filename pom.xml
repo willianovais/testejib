@@ -82,7 +82,7 @@
 						<jvmFlags>
 							<jvmFlag>javaagent:dd-java-agent.jar</jvmFlag>
 							<jvmFlag>-Ddd.service=testejib</jvmFlag>
-							<jvmFlag>-Ddd.env=willtest</jvmFlag>
+							<jvmFlag>-Ddd.env=willteste</jvmFlag>
 							<jvmFlag>-Ddd.logs.injection=true</jvmFlag>
 						</jvmFlags>
 					</container>
