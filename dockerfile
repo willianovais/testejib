@@ -1,3 +1,3 @@
 FROM alpine/java:20-jdk
-RUN wget -O dd-java-agent.jar 'https://dtdg.co/latest-java-tracer'
-RUN chmod +x dd-java-agent.jar
+COPY ./dd-java-agent.jar /opt
+RUN chmod 777 /opt/dd-java-agent.jar

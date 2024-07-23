@@ -86,7 +86,15 @@
 							<jvmFlag>-Ddd.logs.injection=true</jvmFlag>
 						</jvmFlags>
 					</container>
-
+					<extraDirectories>
+					<paths>./dd-java-agent.jar</paths> <!-- Copies files from 'src/main/custom-extra-dir' -->
+					<permissions>
+						<permission>
+        					<file>/opt/dd-java-agent.jar</file>
+        					<mode>755</mode> <!-- Read/write/execute for owner, read/execute for group/other -->
+      					</permission>
+    				<permissions>
+  					</extraDirectories>
 				</configuration>
 			</plugin>
 		</plugins>
