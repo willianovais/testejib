@@ -90,7 +90,6 @@
 							<jvmFlag>-Ddd.env=willtest</jvmFlag>
 							<jvmFlag>-Ddd.logs.injection=true</jvmFlag>
 						</jvmFlags>
-						<entrypoint>java,-jar,/target/demo-0.0.3-SNAPSHOT.jar</entrypoint>
 					</container>
 
 				</configuration>
