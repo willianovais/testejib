@@ -89,7 +89,7 @@
 						</jvmFlags>
 					</container>
 					<extraDirectories>
-					<paths>./dd-java-agent.jar</paths> <!-- Copies files from 'src/main/custom-extra-dir' -->
+					<paths>./ddagent</paths> <!-- Copies files from 'src/main/custom-extra-dir' -->
 					<permissions>
 						<permission>
         					<file>/opt/dd-java-agent.jar</file>
