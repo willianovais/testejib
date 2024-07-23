@@ -85,6 +85,7 @@
 							<jvmFlag>-Ddd.service=testejib</jvmFlag>
 							<jvmFlag>-Ddd.env=willteste</jvmFlag>
 							<jvmFlag>-Ddd.logs.injection=true</jvmFlag>
+							<jvmFlag>-jar</jvmFlag>
 						</jvmFlags>
 					</container>
 
