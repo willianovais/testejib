@@ -76,7 +76,7 @@
 				<version>3.4.3</version>
 				<configuration>
 					<to>
-						<image>willianovais/testejib:0.2</image>
+						<image>alpine/java:20-jdk</image>
 					</to>
 					<container>
 						<jvmFlags>
