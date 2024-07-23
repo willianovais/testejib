@@ -75,8 +75,11 @@
 				<artifactId>jib-maven-plugin</artifactId>
 				<version>3.4.3</version>
 				<configuration>
-					<to>
+					<from>
 						<image>alpine/java:21-jdk</image>
+					</from>
+					<to>
+						<image>lhost:5000/my-image:built-with-jib</image>
 					</to>
 					<container>
 						<jvmFlags>
