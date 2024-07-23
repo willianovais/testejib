@@ -1,2 +1,2 @@
 FROM alpine/java:20-jdk
-RUN 
+RUN wget -O dd-java-agent.jar 'https://dtdg.co/latest-java-tracer'
