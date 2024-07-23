@@ -80,7 +80,7 @@
 					</to>
 					<container>
 						<jvmFlags>
-							<jvmFlag>-javaagent:"/opt/dd-java-agent.jar"</jvmFlag>
+							<jvmFlag>-javaagent:"/app/libs/dd-java-agent.jar"</jvmFlag>
 							<jvmFlag>-XX:FlightRecorderOptions=stackdepth=256</jvmFlag>
 							<jvmFlag>-Ddd.service=testejib</jvmFlag>
 							<jvmFlag>-Ddd.env=willteste</jvmFlag>
@@ -91,12 +91,12 @@
 					<paths>
 						<path>
 							<from>ddagent</from>
-							<into>/opt</into>						
+							<into>/app/libs</into>						
 						</path>
 					</paths> <!-- Copies files from 'src/main/custom-extra-dir' -->
 					<permissions>
 						<permission>
-        					<file>/opt/dd-java-agent.jar</file>
+        					<file>/libs/dd-java-agent.jar</file>
         					<mode>777</mode> <!-- Read/write/execute for owner, read/execute for group/other -->
       					</permission>
     				</permissions>
