@@ -76,7 +76,7 @@
 				<version>3.4.3</version>
 				<configuration>
 					<to>
-						<image>alpine/java:22-jdk</image>
+						<image>alpine/java:19-jdk</image>
 					</to>
 					<container>
 						<jvmFlags>
