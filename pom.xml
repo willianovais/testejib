@@ -79,13 +79,13 @@
 						<image>alpine/java:21-jdk</image>
 					</to>
 					<container>
-						<!--<jvmFlags>
+						<jvmFlags>
 							<jvmFlag>-javaagent:"/opt/dd-java-agent.jar"</jvmFlag>
 							<jvmFlag>-XX:FlightRecorderOptions=stackdepth=256</jvmFlag>
 							<jvmFlag>-Ddd.service=testejib</jvmFlag>
 							<jvmFlag>-Ddd.env=willteste</jvmFlag>
 							<jvmFlag>-Ddd.logs.injection=true</jvmFlag>
-						</jvmFlags> -->
+						</jvmFlags>
 					</container>
 					<extraDirectories>
 					<paths>
