@@ -76,7 +76,7 @@
 				<version>3.4.3</version>
 				<configuration>
 					<from>
-						<image>alpine/java:21-jdk</image>
+						<image>alpine/java:22-jdk</image>
 					</from>
 					<to>
 						<image>lhost:5000/my-image:built-with-jib</image>
