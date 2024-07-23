@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.example.teste</groupId>
 	<artifactId>demo</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<name>demo</name>
 	<description>teste integ datadog</description>
 	<packaging>jar</packaging>
@@ -62,11 +62,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-hateoas</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>io.micrometer</groupId>
-			<artifactId>micrometer-registry-datadog</artifactId>
-			<scope>runtime</scope>
-		</dependency>
 	</dependencies>
 
 	<build>
@@ -81,10 +76,11 @@
 				<version>3.4.3</version>
 				<configuration>
 					<to>
-						<image>willianovais/testejib:0.1</image>
+						<image>willianovais/testejib:0.2</image>
 					</to>
 					<container>
 						<jvmFlags>
+							<jvmFlag>javaagent:dd-java-agent.jar</jvmFlag>
 							<jvmFlag>-Ddd.service=testejib</jvmFlag>
 							<jvmFlag>-Ddd.env=willtest</jvmFlag>
 							<jvmFlag>-Ddd.logs.injection=true</jvmFlag>
