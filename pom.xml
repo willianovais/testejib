@@ -85,6 +85,8 @@
 							<jvmFlag>-Ddd.service=testejib</jvmFlag>
 							<jvmFlag>-Ddd.env=willteste</jvmFlag>
 							<jvmFlag>-Ddd.logs.injection=true</jvmFlag>
+							<jvmFlag>-Ddd.agent.host=datadog-agent</jvmFlag>
+							<jvmFlag>-Ddd.agent.port=8126</jvmFlag>
 						</jvmFlags>
 					</container>
 					<extraDirectories>
