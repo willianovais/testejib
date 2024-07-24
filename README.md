@@ -35,7 +35,7 @@ Editar no campo plugin do arquivo POM.xml
 	    <jvmFlag>-Ddd.agent.host=datadog-agent</jvmFlag>
 	    <jvmFlag>-Ddd.agent.port=8126</jvmFlag>
     </jvmFlags>
-<container>
+</container>
 ```
 
 ## Incluir o agent tracer na imagem do container
