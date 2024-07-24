@@ -3,7 +3,8 @@
 ## Agent container
 Incluir o container do agente na mesma rede da aplicação
 
-```docker run -d --name datadog-agent \
+``` 
+docker run -d --name datadog-agent \
               --network <NETWORK_NAME> \
               --cgroupns host \
               --pid host \
@@ -23,24 +24,26 @@ Incluir o container do agente na mesma rede da aplicação
 
 Editar no campo plugin do arquivo POM.xml
 
- ```<container>
-        <jvmFlags>
-            <jvmFlag>-javaagent:/app/libs/dd-java-agent.jar</jvmFlag>
-	        <jvmFlag>-XX:FlightRecorderOptions=stackdepth=256</jvmFlag>
-	        <jvmFlag>-Ddd.service=SERVICO</jvmFlag>
-	        <jvmFlag>-Ddd.env=AMBIENTE</jvmFlag>
-	        <jvmFlag>-Ddd.logs.injection=true</jvmFlag>
-	        <jvmFlag>-Ddd.agent.host=datadog-agent</jvmFlag>
-	        <jvmFlag>-Ddd.agent.port=8126</jvmFlag>
-        </jvmFlags>
-    <container>
+ ```
+ <container>
+    <jvmFlags>
+        <jvmFlag>-javaagent:/app/libs/dd-java-agent.jar</jvmFlag>
+	    <jvmFlag>-XX:FlightRecorderOptions=stackdepth=256</jvmFlag>
+	    <jvmFlag>-Ddd.service=SERVICO</jvmFlag>
+	    <jvmFlag>-Ddd.env=AMBIENTE</jvmFlag>
+	    <jvmFlag>-Ddd.logs.injection=true</jvmFlag>
+	    <jvmFlag>-Ddd.agent.host=datadog-agent</jvmFlag>
+	    <jvmFlag>-Ddd.agent.port=8126</jvmFlag>
+    </jvmFlags>
+<container>
 ```
 
 ## Incluir o agent tracer na imagem do container
 
 Download do agent https://dtdg.co/latest-java-tracer criar um diretório com o nome ddagent e incluir no repositório 
 
-```<extraDirectories>
+```
+<extraDirectories>
     <paths>
 	    <path>
 	    	<from>ddagent</from>
