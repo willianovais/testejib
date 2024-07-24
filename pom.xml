@@ -80,7 +80,7 @@
 					</to>
 					<container>
 						<jvmFlags>
-							<jvmFlag>-javaagent:"/app/libs/dd-java-agent.jar"</jvmFlag>
+							<jvmFlag>-javaagent:/app/libs/dd-java-agent.jar</jvmFlag>
 							<jvmFlag>-XX:FlightRecorderOptions=stackdepth=256</jvmFlag>
 							<jvmFlag>-Ddd.service=testejib</jvmFlag>
 							<jvmFlag>-Ddd.env=willteste</jvmFlag>
